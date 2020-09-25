@@ -26,8 +26,8 @@
     <div class="grid">
         <div class="col-1-1">
             <div class="content">
-                <h1>Node-RED in Heroku</h1>
-                <h2>A visual tool for wiring the Internet of Things</h2>
+                <h1>Node-RED</h1>
+               
                 <img src="images/node-red-title-flow.png" />
             </div>
         </div>
@@ -47,8 +47,7 @@
         <div class="col-1-2">
             <div class="content blurb">
                 <p style="text-align: center"><a style="width:350px;" class="button" href="red/">Go to your Node-RED flow editor</a></p>
-                <p class="insecure hide" style="text-align: center"><a href="#password-protecting">Learn how to password-protect your instance</a></p>
-                <p style="text-align: center"><a href="#custom">Learn how to customise Node-RED</a></p>
+    
             </div>
         </div>
     </div>
@@ -66,23 +65,7 @@
                 the palette.</p>
                 <p style="clear:both"></p>
 
-                <h4 id="password-protecting">Password protect the flow editor</h4>
-                <p>By default, the editor is open for anyone to access and modify flows. To password-protect the editor:</p>
-                <p>Add the following user-defined variables.</p>
-                <ul>
-                  <li><code>NODE_RED_USERNAME</code> - the username to secure the editor with</li>
-                  <li><code>NODE_RED_PASSWORD</code> - the password to secure the editor with</li>
-                </ul>
-
-                <h4>Adding new nodes to the palette</h4>
-                <ol>
-                    <li>There is a growing collection of additional nodes that can be added to the Node-RED editor.
-                    You can search for available nodes in the <a target="_blank" href="http://flows.nodered.org">Node-RED library</a>.</li>
-                    <li>Edit the file <code>package.json</code> and add the required node package to the <code>dependencies</code>
-                    section. The format is:
-                    <pre>"node-red-node-package-name":"x.x.x"</pre>
-                    Where <code>x.x.x</code> is the desired version number.</li>
-                </ol>
+          
 
                 <h4>Upgrading the version of Node-RED</h4>
                 <ol><li>This boilerplate is configured to grab the latest stable release of Node-RED whenever the
